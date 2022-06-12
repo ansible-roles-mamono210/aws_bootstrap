@@ -1,0 +1,27 @@
+---
+- name: Verify
+  hosts: all
+
+  tasks:
+    - name: Get bucket keys
+      amazon.aws.aws_s3:
+        bucket: mamono210
+        mode: list
+      register: aws_s3_bucket_keys
+      environment:
+        AWS_ACCESS_KEY_ID: "{{ lookup('env', 'AWS_ACCESS_KEY_ID') }}"
+        AWS_SECRET_ACCESS_KEY: "{{ lookup('env', 'AWS_SECRET_ACCESS_KEY') }}"
+        AWS_SESSION_TOKEN: "{{ lookup('env', 'AWS_SESSION_TOKEN') }}"
+
+    - name: List bucket key s
+      ansible.builtin.debug:
+        var: aws_s3_bucket_keys
+
+    - name: Check OS version
+      ansible.builtin.command: cat /etc/redhat-release
+      register: os_version
+      changed_when: false
+
+    - name: Show OS version
+      ansible.builtin.debug:
+        var: os_version

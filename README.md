@@ -1,0 +1,39 @@
+[![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/aws_s3_bootstrap/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/aws_s3_bootstrap/tree/main)
+
+Role Description
+=========
+
+Installs boto3 for CentOS7/Stream8.
+
+Requirements
+------------
+
+EPEL and pip installed before running this role.
+
+Role Variables
+--------------
+
+None
+
+Dependencies
+------------
+
+None
+
+Example Playbook
+----------------
+
+```YAML
+---
+- hosts: all
+  become: true
+  roles:
+    - robertdebock.epel
+    - geerlingguy.pip
+    - aws_s3_bootstrap
+```
+
+License
+-------
+
+BSD

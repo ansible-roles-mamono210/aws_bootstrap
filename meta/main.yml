@@ -1,0 +1,15 @@
+---
+dependencies: []
+galaxy_info:
+  author: mamono210
+  company:
+  description: boto3  installation for Linux.
+  galaxy_tags: []
+  license: "license (BSD, MIT)"
+  min_ansible_version: 5
+  role_name: aws_s3_bootstrap
+  platforms:
+    - name: EL
+      versions:
+        - 7
+        - 8
