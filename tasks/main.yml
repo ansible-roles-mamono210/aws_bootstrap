@@ -1,7 +1,7 @@
 ---
 - name: Install epel repo
   ansible.builtin.include_role:
-    name: geerlingguy.repo-epel
+    name: mamono210.epel
 
 - name: Install pip and boto3 (CentOS Stream 8)
   ansible.builtin.include_role:
