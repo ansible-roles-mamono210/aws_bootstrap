@@ -5,7 +5,7 @@ dependencies:
     src: https://github.com/ansible-roles-mamono210/epel.git
 galaxy_info:
   author: mamono210
-  company:
+  company: no name
   description: boto3  installation for Linux.
   galaxy_tags: []
   license: "license (BSD, MIT)"
