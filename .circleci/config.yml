@@ -32,14 +32,6 @@ jobs:
           command: |
             ansible-galaxy install git+${CIRCLE_REPOSITORY_URL},${CIRCLE_SHA1}
       - run:
-          name: Install dependent roles
-          command: |
-            for d in `find molecule/* -maxdepth 1`; do
-              if [[ $d =~ molecule/.*/requirements.yml ]]; then
-                ansible-galaxy install -r $d
-              fi
-            done
-      - run:
           name: Execulte Ansible-lint
           command: ansible-lint
       - run:

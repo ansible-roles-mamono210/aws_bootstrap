@@ -1,5 +1,8 @@
 ---
-dependencies: []
+dependencies:
+  - name: geerlingguy.pip
+  - name: mamono210.epel
+    src: https://github.com/ansible-roles-mamono210/epel.git
 galaxy_info:
   author: mamono210
   company:
@@ -13,3 +16,4 @@ galaxy_info:
       versions:
         - 7
         - 8
+  standalone: false
