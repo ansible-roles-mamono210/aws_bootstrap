@@ -13,7 +13,7 @@ galaxy_info:
   role_name: aws_s3_bootstrap
   platforms:
     - name: EL
-      versions:
+      release:
         - 7
         - 8
   standalone: false
