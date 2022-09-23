@@ -9,7 +9,7 @@ galaxy_info:
   description: boto3  installation for Linux.
   galaxy_tags: []
   license: "license (BSD, MIT)"
-  min_ansible_version: 5
+  min_ansible_version: 6.0.0
   role_name: aws_s3_bootstrap
   platforms:
     - name: EL
