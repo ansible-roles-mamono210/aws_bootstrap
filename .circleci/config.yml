@@ -60,16 +60,6 @@ jobs:
           role-session-name: circleci_ansible-role_aws_s3_bootstrap
           session-duration: '900'
       - run:
-          name: Set AWS credentials to GitHub Actions environment variables
-          command: |
-            AWS_ACCESS_KEY_ID=`cat ~/.aws/credentials | grep aws_access_key_id | awk '{print $3}'`
-            AWS_SECRET_ACCESS_KEY=`cat ~/.aws/credentials | grep aws_secret_access_key | awk '{print $3}'`
-            AWS_SESSION_TOKEN=`cat ~/.aws/credentials | grep aws_session_token | awk '{print $3}'`
-            echo "AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}" >> $BASH_ENV
-            echo "AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}" >> $BASH_ENV
-            echo "AWS_SESSION_TOKEN=${AWS_SESSION_TOKEN}" >> $BASH_ENV
-            source $BASH_ENV
-      - run:
           name: Test with Molecule
           command: |
             sudo chmod 666 /var/run/docker.sock
