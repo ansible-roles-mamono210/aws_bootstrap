@@ -4,7 +4,7 @@
 
   tasks:
     - name: Get bucket keys
-      amazon.aws.aws_s3:
+      amazon.aws.s3_object:
         bucket: mamono210
         mode: list
       register: aws_s3_bucket_keys
