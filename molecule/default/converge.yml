@@ -5,4 +5,4 @@
   vars:
     ansible_user: ansible
   roles:
-    - aws_s3_bootstrap
+    - aws_bootstrap

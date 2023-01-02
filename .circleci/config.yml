@@ -105,7 +105,7 @@ workflows:
           matrix:
             parameters:
               checkout-path:
-                - 'aws_s3_bootstrap'
+                - 'aws_bootstrap'
               molecule-executor-image:
                 - 'ghcr.io/docker-images-mamono210/circleci-executors_molecule/molecule:docker'
               molecule-test-image:

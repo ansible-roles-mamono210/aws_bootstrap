@@ -1,4 +1,4 @@
-[![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/aws_s3_bootstrap/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/aws_s3_bootstrap/tree/main)
+[![CircleCI](https://circleci.com/gh/ansible-roles-mamono210/aws_bootstrap/tree/main.svg?style=svg)](https://circleci.com/gh/ansible-roles-mamono210/aws_bootstrap/tree/main)
 
 Role Description
 =========

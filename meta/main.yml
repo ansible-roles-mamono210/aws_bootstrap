@@ -10,7 +10,7 @@ galaxy_info:
   galaxy_tags: []
   license: "license (BSD, MIT)"
   min_ansible_version: 7.0.0
-  role_name: aws_s3_bootstrap
+  role_name: aws_bootstrap
   platforms:
     - name: EL
       release:
