@@ -3,7 +3,7 @@
   ansible.builtin.include_role:
     name: mamono210.epel
 
-- name: Install pip and boto3 (CentOS Stream 8)
+- name: Install pip and boto3
   ansible.builtin.include_role:
     name: geerlingguy.pip
   vars:
@@ -12,20 +12,3 @@
       - name: boto3
     pip_executable: pip3
     pip_package: python3-pip
-  when:
-    - ansible_distribution == "CentOS"
-    - ansible_distribution_major_version == "8"
-
-- name: Install pip and boto3 (CentOS 7)
-  ansible.builtin.include_role:
-    name: geerlingguy.pip
-  vars:
-    pip_install_packages:
-      - name: pip
-        version: "20.3.4"
-      - name: boto3
-    pip_executable: pip
-    pip_package: python-pip
-  when:
-    - ansible_distribution == "CentOS"
-    - ansible_distribution_major_version == "7"
