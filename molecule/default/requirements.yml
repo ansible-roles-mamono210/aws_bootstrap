@@ -1,5 +1,6 @@
 ---
 roles:
   - name: geerlingguy.pip
+    version: 'master'
   - name: mamono210.epel
     src: https://github.com/ansible-roles-mamono210/epel.git
