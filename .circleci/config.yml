@@ -4,7 +4,7 @@ version: 2.1
 executors:
   molecule:
     machine:
-      image: ubuntu-2004:202111-02
+      image: ubuntu-2204:2023.10.1
     resource_class: medium
   trailing-whitespace:
     docker:
