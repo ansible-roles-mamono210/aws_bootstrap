@@ -3,7 +3,7 @@
 Role Description
 =========
 
-Installs boto3 for CentOS7/Stream8.
+Installs boto3 for CentOS Stream 9.
 
 Requirements
 ------------
