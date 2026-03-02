@@ -8,7 +8,7 @@ Installs boto3 for CentOS Stream 9.
 Requirements
 ------------
 
-EPEL and pip installed before running this role.
+None
 
 Role Variables
 --------------
@@ -28,7 +28,6 @@ Example Playbook
 - hosts: all
   become: true
   roles:
-    - robertdebock.epel
     - geerlingguy.pip
     - aws_s3_bootstrap
 ```

@@ -14,7 +14,6 @@ provisioner:
       roles_path: "$HOME/.ansible/roles/:/tmp"
 scenario:
   test_sequence:
-    - dependency
     - syntax
     - create
     - converge
